@@ -3,7 +3,7 @@ export const site = {
   hero: {
     title: "Paul's Bible Tools",
     subtitle:
-      "A collection of simple, focused web tools to help you slow down, dig deep, and rightly handle the Word of Truth.",
+      "A collection of simple but powerful web tools to help you dig deep into scripture and rightly handle the Word of Truth.",
   },
   featuredVerse: {
     text: "“All Scripture is breathed out by God and profitable for teaching, for reproof, for correction, and for training in righteousness.”",

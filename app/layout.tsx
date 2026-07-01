@@ -18,16 +18,16 @@ const ebGaramond = EB_Garamond({
 });
 
 export const metadata: Metadata = {
-  title: "Paul's Bible Study",
+  title: "Paul's Bible Tools",
   description:
-    "A collection of simple, focused web tools to help you slow down, dig deeper, and rightly handle the Word of truth.",
+    "A collection of simple but powerful web tools to help you dig deep into scripture and rightly handle the Word of truth.",
   metadataBase: new URL("https://paulpowell.cc"),
   openGraph: {
-    title: "Paul's Bible Study",
+    title: "Paul's Bible Tools",
     description:
-      "A collection of simple, focused web tools to help you slow down, dig deeper, and rightly handle the Word of truth.",
+      "A collection of simple but powerful web tools to help you dig deep into scripture and rightly handle the Word of truth.",
     url: "https://paulpowell.cc",
-    siteName: "Paul's Bible Study",
+    siteName: "Paul's Bible Tools",
     type: "website",
   },
 };
