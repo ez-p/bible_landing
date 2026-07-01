@@ -1,0 +1,51 @@
+@import "tailwindcss";
+
+:root {
+  --bg-parchment-start: #f6eed7;
+  --bg-parchment-mid: #efe5c9;
+  --bg-parchment-end: #e9ddbe;
+  --text-primary: #2c2a20;
+  --text-heading: #1c2b49;
+  --text-muted: #5c5843;
+  --text-footer: #8a856d;
+  --olive: #4d5330;
+  --parchment-light: #f4ecd6;
+  --gold: #bd9a5f;
+  --gold-muted: #c9b47e;
+  --card-bg: #faf4e2;
+  --eyebrow: #6b7144;
+  --eyebrow-tools: #8a6b3f;
+  --cta: #4d5330;
+}
+
+@theme inline {
+  --font-display: var(--font-cormorant);
+  --font-body: var(--font-eb-garamond);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  color: var(--text-primary);
+  font-family: var(--font-eb-garamond), "Times New Roman", serif;
+  background: radial-gradient(
+    120% 90% at 50% 0%,
+    var(--bg-parchment-start) 0%,
+    var(--bg-parchment-mid) 60%,
+    var(--bg-parchment-end) 100%
+  );
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
