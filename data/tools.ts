@@ -16,7 +16,7 @@ export const studyTools: StudyTool[] = [
     eyebrow: "Original Languages",
     title: "Scripture Word Study",
     description:
-      "Expound the meaning of a passage through its original Greek and Hebrew words.",
+      "Expound the meaning of Bible passages through their original Greek and Hebrew words.",
     cta: "Open the study →",
   },
   {
@@ -24,7 +24,7 @@ export const studyTools: StudyTool[] = [
     icon: "/images/bible-xref2.png",
     iconAlt: "Cross-Reference",
     eyebrow: "Context & Connections",
-    title: "Cross-Reference Guide",
+    title: "Cross-Reference Study",
     description:
       "Generate contextual study guides that connect scripture to scripture.",
     cta: "Open the study →",

@@ -4,6 +4,8 @@ A single-page landing site for **Paul's Bible Study** — a hub that links to fo
 
 **Live site:** [paulpowell.cc](https://paulpowell.cc)
 
+**Documentation:** See [`docs/`](./docs/) for detailed design and implementation reference (LLM-friendly).
+
 ---
 
 ## Overview
@@ -14,8 +16,8 @@ This repository contains a static Next.js landing page. It introduces the study 
 
 | Tool | Description | URL |
 |------|-------------|-----|
-| **Scripture Word Study** | Expound the meaning of a passage through its original Greek and Hebrew words. | [bible-xplr.vercel.app](https://bible-xplr.vercel.app/) |
-| **Cross-Reference Guide** | Generate contextual study guides that connect scripture to scripture. | [bible-xref2.vercel.app](https://bible-xref2.vercel.app/) |
+| **Scripture Word Study** | Expound the meaning of Bible passages through their original Greek and Hebrew words. | [bible-xplr.vercel.app](https://bible-xplr.vercel.app/) |
+| **Cross-Reference Study** | Generate contextual study guides that connect scripture to scripture. | [bible-xref2.vercel.app](https://bible-xref2.vercel.app/) |
 
 ---
 
@@ -53,7 +55,7 @@ bible_landing/
 ├── components/
 │   ├── BrandBar.tsx         # Top brand label with gold rules
 │   ├── Hero.tsx             # Main headline and subtitle
-│   ├── FeaturedVerse.tsx    # 2 Timothy 2:15 (KJV) panel
+│   ├── FeaturedVerse.tsx    # 2 Timothy 3:16 (ESV) panel
 │   ├── StudyTools.tsx       # Tool section wrapper and grid
 │   ├── ToolCard.tsx         # Individual linked tool card
 │   └── SiteFooter.tsx       # Closing verse and message
@@ -63,7 +65,7 @@ bible_landing/
 ├── public/
 │   └── images/
 │       ├── Bible_Explorer.png   # Scripture Word Study icon
-│       └── bible-xref2.png      # Cross-Reference Guide icon
+│       └── bible-xref2.png      # Cross-Reference Study icon
 ├── bible_study_landing.html     # Original design mock (reference)
 ├── next.config.ts
 ├── package.json
@@ -146,9 +148,9 @@ Edit `data/site.ts` to change the brand label, hero headline, featured verse, se
 
 ```ts
 export const site = {
-  brandLabel: "My Bible Study Tools & Resources",
+  brandLabel: "Bible Study Tools & Resources",
   hero: {
-    title: ["Study to Show", "Yourself Approved"],
+    title: "Paul's Bible Tools",
     subtitle: "…",
   },
   // …
@@ -210,6 +212,24 @@ Tool card icons are displayed at 88×88 pixels with `object-fit: contain` and a 
 | `npm run build` | Create a production build |
 | `npm start` | Serve the production build locally |
 | `npm run lint` | Run ESLint |
+
+---
+
+## Documentation
+
+Comprehensive design and implementation docs live in [`docs/`](./docs/):
+
+| Document | Description |
+|----------|-------------|
+| [docs/README.md](./docs/README.md) | Index and LLM ingest guide |
+| [docs/PROJECT_OVERVIEW.md](./docs/PROJECT_OVERVIEW.md) | Purpose, scope, and page structure |
+| [docs/ARCHITECTURE.md](./docs/ARCHITECTURE.md) | Stack, file layout, and data flow |
+| [docs/DESIGN_SYSTEM.md](./docs/DESIGN_SYSTEM.md) | Colors, typography, layout, and motion |
+| [docs/CONTENT_MODEL.md](./docs/CONTENT_MODEL.md) | All copy, schemas, and metadata |
+| [docs/COMPONENTS.md](./docs/COMPONENTS.md) | Per-component reference |
+| [docs/IMPLEMENTATION_GUIDE.md](./docs/IMPLEMENTATION_GUIDE.md) | Step-by-step change recipes |
+| [docs/CONVENTIONS.md](./docs/CONVENTIONS.md) | Coding standards and anti-patterns |
+| [docs/DEPLOYMENT.md](./docs/DEPLOYMENT.md) | Vercel and domain setup |
 
 ---
 

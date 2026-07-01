@@ -3,11 +3,11 @@ export const site = {
   hero: {
     title: "Paul's Bible Tools",
     subtitle:
-      "A collection of simple, focused web tools to help you slow down, dig deeper, and rightly handle the Word of truth — one passage at a time.",
+      "A collection of simple, focused web tools to help you slow down, dig deep, and rightly handle the Word of Truth.",
   },
   featuredVerse: {
-    text: "“Study to shew thyself approved unto God, a workman that needeth not to be ashamed, rightly dividing the word of truth.”",
-    reference: "2 Timothy 2:15 · KJV",
+    text: "“All Scripture is breathed out by God and profitable for teaching, for reproof, for correction, and for training in righteousness.”",
+    reference: "2 Timothy 3:16 · ESV",
   },
   toolsSectionLabel: "The Study Tools",
   footer: {
