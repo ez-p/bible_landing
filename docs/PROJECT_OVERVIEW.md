@@ -38,6 +38,7 @@ The project is intentionally minimal:
 - **No environment variables:** Required for current feature set
 - **No client-side state management:** No Redux, Zustand, or React Context for data
 - **Build-time rendering:** Page is statically generated at `next build`
+- **Deliberately hidden from search engines:** The site sets `noindex, nofollow` metadata (`app/layout.tsx`) and serves a disallow-all `robots.txt` (`app/robots.ts`). This is intentional — do not remove or "fix" it without an explicit request.
 
 ## Design direction
 
@@ -96,6 +97,7 @@ Alternative mock directions (1b Illuminated Manuscript, 1c Modern Calm) exist in
 |------|-----------------|
 | Change any visible text | `data/site.ts`, `data/tools.ts` |
 | Change page title / SEO | `app/layout.tsx` |
+| Change search-engine indexing behavior | `app/layout.tsx` (meta robots), `app/robots.ts` (robots.txt) |
 | Change colors globally | `app/globals.css` |
 | Change layout/structure | `app/page.tsx`, `components/*` |
 | Add a tool | `data/tools.ts`, `public/images/` |

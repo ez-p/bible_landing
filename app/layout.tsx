@@ -30,6 +30,10 @@ export const metadata: Metadata = {
     siteName: "Paul's Bible Tools",
     type: "website",
   },
+  robots: {
+    index: false,
+    follow: false,
+  },
 };
 
 export default function RootLayout({
